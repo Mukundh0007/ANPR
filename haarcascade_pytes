@@ -2,8 +2,9 @@ import cv2
 import imutils
 import pytesseract
 
-haarcascade = "/Users/mukundhjayapal/Downloads/ANPR/model/haarcascade_russian_plate_number.xml"
-
+#download the haarcascade for number plate detection
+haarcascade = "path/to/haarcascade_russian_plate_number.xml"
+#realtime detection and OCR
 cap = cv2.VideoCapture(0)
 cap.set(3, 640)  # width
 cap.set(4, 480)  # height
